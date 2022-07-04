@@ -1,5 +1,6 @@
 analise
 sintese
+identifição
 e problema inverso
 tipos de sistemas para modelagem
 aplicações em sistemas de comunicação sem fio
@@ -11,10 +12,6 @@ condições de Hadamard
 a definição clássica de Hadamard de um problema mal condicionado
 
 TIKHONOV, A. N.; ASENIN, V. Y. Solutions of Ill-Posed Problems. 1977. 270 p. -> Bom
-
-TIKHONOV, A. N. et al. Numerical methods for the solution of ill-posed problems. [S.l.: s.n.], 1995. 256 p. ISBN 9789048145836. -> Não entendi NADA
-
-BERTERO, M.; POGGIO, T.; TORRE, V. Ill-posed problems in early vision. Proceedings of the IEEE, v. 76, n. 8, p. 869–889, 1988. ISSN 00189219.
 
 GIOVANNELLI, J.-F.; IDIER, J. Regularization and Bayesian Methods for Inverse
 
