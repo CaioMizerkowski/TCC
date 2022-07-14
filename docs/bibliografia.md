@@ -32,5 +32,8 @@ https://ieeexplore-ieee-org.ez22.periodicos.capes.gov.br/document/8779092
 https://ieeexplore-ieee-org.ez22.periodicos.capes.gov.br/document/8888813
 https://ieeexplore-ieee-org.ez22.periodicos.capes.gov.br/document/298524
 https://ieeexplore-ieee-org.ez22.periodicos.capes.gov.br/document/9214919
+https://ieeexplore.ieee.org/abstract/document/9528846
+https://par.nsf.gov/servlets/purl/10202730
+https://ieeexplore-ieee-org.ez22.periodicos.capes.gov.br/document/9048910
 
 
