@@ -1,2 +1,2 @@
-model_checkpoint_path: "modeledcadence_extraction_weights_real"
-all_model_checkpoint_paths: "modeledcadence_extraction_weights_real"
+model_checkpoint_path: "modeledcadence_extraction_imag2"
+all_model_checkpoint_paths: "modeledcadence_extraction_imag2"
