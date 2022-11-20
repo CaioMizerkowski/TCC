@@ -1,0 +1,21 @@
+def run_LSTM_M0_M1_HL(x, y, M0=0, M1=10, HL=1):
+    start = time()
+    inputs = prep_data_LSTM(x, M0, M1)
+    print(inputs.shape)
+    s_real, s_imag = gerar_s(y[M0+M1:], x[M0+M1:])
+
+    model_real = gen_model_LSTM(M0, M1, HL, 'parte_real')
+    model_imag = gen_model_LSTM(M0, M1, HL, 'parte_imag')
+
+    compile_model(model_real)
+    compile_model(model_imag)
+    his = [0,0]
+    his[0] = fit_model(model_real, 1000, inputs, s_real)
+    his[1] = fit_model(model_imag, 1000, inputs, s_imag)
+
+    model = (model_real, model_imag)
+    # nmse = validation_models(model_real, model_imag, inputs, x, y)
+    nmse, _ = validation_LSTM(model, x, y, M0, M1)
+    end = time()
+    print(f'Shape:{inputs.shape[1]} M0:{M0} M:{M1} HL:{HL} nmse:{nmse} time:{end-start}')
+    return model, nmse, his

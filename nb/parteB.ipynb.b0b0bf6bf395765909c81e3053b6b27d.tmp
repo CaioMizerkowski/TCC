@@ -1,0 +1,18 @@
+x, y = y, x
+model, nmse, his = run_LSTM_M0_M1_HL(x, y, M0=1, M1=3, HL=4)
+print(f"nmse - extraction: {nmse}")
+
+pv = p.parent / p.parts[-1].replace("extraction", "validation")
+data = load_csv2numpy(pv)
+
+x = data[:, 0] + 1j * data[:, 1]
+x = normalize_data(x)
+x_abs = np.abs(x)
+
+y = data[:, 2] + 1j * data[:, 3]
+y = normalize_data(y)
+y_abs = np.abs(y)
+
+x, y = y, x
+nmse, _ = validation_LSTM(model, x, y, M0=1, M1=3)
+print(f"nmse - validation: {nmse}")

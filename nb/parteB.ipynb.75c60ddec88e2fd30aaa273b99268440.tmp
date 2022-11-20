@@ -1,0 +1,6 @@
+plt.figure(figsize=(10,10))
+tlist = np.array(tlist).reshape(-1,)
+ylist = np.array(ylist).reshape(-1,)
+sns.lineplot(x=np.abs(tlist), y=np.abs(ylist), color='red', label='Curva')
+plt.show()
+plt.close()
